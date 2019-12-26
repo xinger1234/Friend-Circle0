@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>校友圈APP</title>
+    <link rel="stylesheet" type="text/css" href="../css/aui.css" />
+	<style>
+        .login-third {
+            margin-top: 3rem;
+        }
+	</style>
+</head>
+<body>
+  <section class="aui-content-padded">
+      <div class="aui-btn aui-btn-block aui-btn-info aui-btn-sm" tapmode>注册</div>
+  </section>
+    <section class="aui-content aui-margin-t-15">
+        <ul class="aui-list aui-form-list">
+            <li class="aui-list-item">
+                <div class="aui-list-item-inner">
+                    <div class="aui-list-item-label aui-border-r color-orange">姓名
+                        <!--<small class="aui-margin-l-5 aui-text-warning"></small>-->
+                    </div>
+                    <div class="aui-list-item-input ">
+                        <input type="" pattern="" placeholder="  输入姓名" id="name" >
+                    </div>
+                </div>
+            </li>
+            <li class="aui-list-item">
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label aui-border-r color-orange">学校
+                <!--  <small class="aui-margin-1-5 aui-text-warning"></small>-->
+                </div>
+              </div>
+              <div class="aui-list-item-input">
+                <input placeholder=" 输入学校名称" id="home" >
+                </input>
+              </div>
+            </li>
+            <li class="aui-list-item">
+                <div class="aui-list-item-inner">
+                  <div class="aui-list-item-label aui-border-r color-organge">学院
+                  <!--  <small class="aui-margin-1-5 aui-text-warning"></small>-->
+                  </div>
+              </div>
+              <div class="aui-list-item-input">
+                <input placeholder="  输入学院名称" id="academic"></input>
+            </div>
+            <li>
+              <div class="aui-list-item-inner">
+                <div class="aui-list-item-label aui-border-r color-organge">手机号
+                <!--  <small class="aui-margin-1-5 aui-text-warning">+86</small>-->
+                </div>
+              <div class="aui-list-item-input">
+                <input type="number" pattern="[1-10]*" placeholder="  输入手机号" id="code"></input>
+              </div>
+            </div>
+            </li>
+            <li class="clearfix">
+					 		<span class="dl_form_left i18n">密码</span>
+					 		<input data-val-ignore="hidden" type="password" class="dl_textinp i18n_valid" i18name="reg_pwd" name="PhonePass" id="PhonePass" info="密码8-20位，必须包含字母和数字（不能包含空格），字母区分大小写" data-val-length="您输入的邮箱长度超过100位" data-val-length-max="20" data-val-regex-pattern="^(?=.*[0-9])(?=.*[a-zA-Z])[0-9a-zA-Z-`=\\\[\];',./~!@#$%^&amp;*_+|(){}:&quot;<>?]{8,20}$" data-val-regex="您输入的密码不符合规范" data-val="true" data-val-required="必填">
+                            <span class="field-validation-valid bs_pop_alert " data-valmsg-for="PhonePass" data-valmsg-replace="true" style="display: block;"></span>
+					 	</li>
+					 	<li class="clearfix">
+					 		<span class="dl_form_left i18n">确认密码</span>
+					 		<input data-val-ignore="hidden" class="dl_textinp i18n_valid" i18name="confirmpwd" id="ConfirmPhonePassword" name="ConfirmPhonePassword" type="password" data-val="true" data-val-equalto="两次输入的密码不一致" info="请确保和密码输入一致" data-val-equalto-other="*.PhonePass" data-val-required="必填">
+                            <span class="field-validation-valid bs_pop_alert " data-valmsg-for="ConfirmPhonePassword" data-valmsg-replace="true"></span>
+					 	</li>
+            <li class="aui-list-item">
+                <div class="aui-list-item-inner">
+                    <div class="aui-list-item-input" style="width: auto;">
+                        <input type="number" pattern="^1[345678][0-9]{9}$" placeholder="输入短信验证码" id="code">
+                    </div>
+                    <div class="aui-list-item-label aui-margin-r-15" style="width: 6rem;">
+                        <div class="aui-btn aui-btn-info" style="width: 6rem;">获取验证码</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="dl_phone_wrap">
+                        <li class="clearfix">
+                            <span class="dl_form_left i18n">手机号</span>
+                            <input data-val-ignore="hidden" type="text" class="dl_textinp i18n_valid dl_dftgrey phoneNum" i18name="phone_require" name="phoneNum" id="phoneNum" data-val="true" data-val-required="必填" defaultvalue="请输入手机号" data-val-regex-pattern="^13[0-9]\d{8}$|^14[5-9]\d{8}$|^15[0-3]\d{8}$|^15[5-9]\d{8}$|^16[5-7]\d{8}$|^17[0-8]\d{8}$|^18[\d]{9}$|^19[1,8,9]\d{8}$" data-val-regex="手机号格式不正确" style="color:#475966" placeholder="请输入手机号">
+                            <span class="bs_pop_alert field-validation-error phone_num_error i18n hasphone" style="display:none;">手机号已被注册，请直接登录</span><!--手机号已被注册，请直接登录-->
+                            <span class="field-validation-valid bs_pop_alert " data-valmsg-for="phoneNum" data-valmsg-replace="true"></span>
+                        </li>
+					 	<li class="clearfix">
+					 		<span class="dl_form_left i18n">密码</span>
+					 		<input data-val-ignore="hidden" type="password" class="dl_textinp i18n_valid" i18name="reg_pwd" name="PhonePass" id="PhonePass" info="密码8-20位，必须包含字母和数字（不能包含空格），字母区分大小写" data-val-length="您输入的邮箱长度超过100位" data-val-length-max="20" data-val-regex-pattern="^(?=.*[0-9])(?=.*[a-zA-Z])[0-9a-zA-Z-`=\\\[\];',./~!@#$%^&amp;*_+|(){}:&quot;<>?]{8,20}$" data-val-regex="您输入的密码不符合规范" data-val="true" data-val-required="必填">
+                            <span class="field-validation-valid bs_pop_alert " data-valmsg-for="PhonePass" data-valmsg-replace="true" style="display: block;"></span>
+					 	</li>
+					 	<li class="clearfix">
+					 		<span class="dl_form_left i18n">确认密码</span>
+					 		<input data-val-ignore="hidden" class="dl_textinp i18n_valid" i18name="confirmpwd" id="ConfirmPhonePassword" name="ConfirmPhonePassword" type="password" data-val="true" data-val-equalto="两次输入的密码不一致" info="请确保和密码输入一致" data-val-equalto-other="*.PhonePass" data-val-required="必填">
+                            <span class="field-validation-valid bs_pop_alert " data-valmsg-for="ConfirmPhonePassword" data-valmsg-replace="true"></span>
+					 	</li>
+                        <li class="clearfix">
+                            <span class="dl_form_left i18n">短信验证码</span>
+                            <div class="validate_content validatecode_info verify_wrapper">
+					            <span class="validate_bac" style="display: inline-block;">
+                                    <input data-val-ignore="hidden" type="text" class="dl_textinp i18n_valid send_code smscode_new" i18name="message_code" name="smsCode" id="smsCode" data-val-required="必填" data-val="true" data-val-regex-pattern="^\d{6}$" data-val-regex="短信验证码格式不正确">
+					            </span>
+                                <span class="send_smscode i18n">发送验证码</span>
+                            </div>
+                            <span class="bs_pop_alert field-validation-error phone_num_error i18n error_limit" style="display:none;">今日校验码错误次数过多，该手机号已锁定，请明日再试</span>
+                            <span class="bs_pop_alert field-validation-error phone_num_error i18n  send_limit" style="display:none;">您发送校验码的次数过多，请明天再试</span>
+                            <span class="bs_pop_alert field-validation-error phone_num_error i18n error_code" style="display:none;">短信验证码输入错误，请重新输入</span>
+                            <span class="bs_pop_alert field-validation-error phone_num_error geetest_error" style="display:none;color:#cc2929;">请求超时，请手动刷新页面后重试</span>
+                            <span class="field-validation-valid bs_pop_alert " data-valmsg-for="smsCode" data-valmsg-replace="true"></span>
+                         </li>
+                    </ul>
+    </section>
+
+    <!--<section class="aui-content-padded login-third">
+        <p class="aui-font-size-12 aui-text-center aui-margin-b-15">第三方账号登录</p>
+        <div class="aui-grid" style="background: none;">
+            <div class="aui-row">
+                <div class="aui-col-xs-4">
+                    <i class="aui-iconfont aui-icon-qq"></i>
+                </div>
+                <div class="aui-col-xs-4">
+                    <i class="aui-iconfont aui-icon-wechat"></i>
+                </div>
+                <div class="aui-col-xs-4">
+                    <i class="aui-iconfont aui-icon-weibo"></i>
+                </div>
+            </div>
+        </div>
+    </section>-->
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+    apiready = function(){
+        api.parseTapmode();
+    };
+</script>
+</html>
